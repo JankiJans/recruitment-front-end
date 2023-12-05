@@ -1,0 +1,88 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 44px 122px 23px 74px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 116px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-right: 44px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+.navbar-links a:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 21px;
+  background-color: #007bff;
+  display: block;
+}
+
+.navbar-extras {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-btn {
+    background-color: #dbdbdb;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 13px 23px;
+    text-align: center;
+    display: inline-block;  
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.contact-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.language-select {
+  background-color: #dbdbdb;
+  border: 0;
+  margin: 0 40px 0 24px;
+}
+
+.phone-number {
+  font-weight: lighter;
+  color: #aaaaaa;
+  span {
+    color: #2f7afe;
+  }
+}

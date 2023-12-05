@@ -1,0 +1,23 @@
+.white-square {
+    width: 818px;
+    height: 856px; 
+    background-color: #fff; 
+    top: 0; 
+    left: 0;
+    transform: translate(0, -22%);
+    z-index: -2; 
+    position: absolute;
+    border-radius: 0 0 60px 0;
+}
+
+.grey-square {
+    width: 162px;
+    height: 162px; 
+    background-color: #dbdbdb; 
+    top: 0; 
+    left: 0;
+    transform: translate(0, -27%);
+    z-index: -1; 
+    position: absolute;
+    border-radius: 0 0 60px 0;
+}
