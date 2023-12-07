@@ -1,23 +1,48 @@
-.white-square {
-    width: 818px;
-    height: 856px; 
-    background-color: #fff; 
-    top: 0; 
-    left: 0;
-    transform: translate(0, -22%);
-    z-index: -2; 
-    position: absolute;
-    border-radius: 0 0 60px 0;
+.white-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
-.grey-square {
-    width: 162px;
-    height: 162px; 
-    background-color: #dbdbdb; 
-    top: 0; 
-    left: 0;
-    transform: translate(0, -27%);
-    z-index: -1; 
+.logo-background {
     position: absolute;
-    border-radius: 0 0 60px 0;
-}
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+.squares-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 12.5%;
+    left: 35.5%;
+  }
+  
+  .top-square {
+    align-self: flex-end;
+  }
+  
+  .bottom-squares {
+    display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  }
+  
+  .square-top {
+    margin-bottom: 24px;
+  }
+  
+  .square-left {
+    margin-right: 30px;
+  }
+  
+  .dots-behind-square {
+    position: absolute;
+    right: -6.5%;
+    top: 0;
+    z-index: -1;
+  }
