@@ -6,43 +6,106 @@
 }
 
 .logo-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
 
 .squares-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 12.5%;
-    left: 35.5%;
-  }
-  
-  .top-square {
-    align-self: flex-end;
-  }
-  
-  .bottom-squares {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 12.5%;
+  left: 35.5%;
+}
+
+.top-square {
+  align-self: flex-end;
+}
+
+.bottom-squares {
+  display: flex;
   align-items: flex-start;
   position: relative;
+}
 
-  }
-  
-  .square-top {
-    margin-bottom: 24px;
-  }
-  
-  .square-left {
-    margin-right: 30px;
-  }
-  
-  .dots-behind-square {
-    position: absolute;
-    right: -6.5%;
-    top: 0;
-    z-index: -1;
-  }
+.square-top {
+  margin-bottom: 24px;
+}
+
+.square-left {
+  margin-right: 30px;
+}
+
+.circle-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 70%;
+  z-index: 1;
+  left: 64%;
+}
+
+.line-5 {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+}
+
+.blue-circle {
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 142.5%;
+  left: 78%;
+  z-index: 1;
+}
+
+.play-button-container {
+  position: relative;
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.dots-behind-square {
+  position: absolute;
+  right: -6.5%;
+  top: 0;
+  z-index: -1;
+}
+
+.play-button,
+.play-icon {
+  position: absolute;
+  top: 41%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.line-4 {
+  position: absolute;
+  left: 5.5%;
+  transform: translate(-50%, -50%);
+}
+
+
+.watch-video-text {
+  font-size: 18px;
+  color: #0f6eff; 
+  margin-left: 300px;
+  position: relative;
+}
+
+.watch-video-text::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #0f6eff;
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+}
