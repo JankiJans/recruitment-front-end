@@ -40,10 +40,15 @@
     </div>
 
     <div class="play-button-container">
-      <p class="watch-video-text"><span>Watch demo</span> <br />video</p>
-      <img src="../img/playbutton.png" alt="Play Button" class="play-button" />
+      <p class="watch-video-text" id="watchVideoText"><span>Watch demo</span> <br />video</p>
+      <img src="../img/playbutton.png" alt="Play Button" class="play-button" id="playButton"/>
       <img src="../img/Icon (double click to edit).png" alt="Play Icon" class="play-icon" />
       <img src="../img/Line 4.png" alt="Line 4" class="line-4" />
+    </div>
+    
+    <div class="video-overlay" id="videoOverlay">
+      <iframe id="youtubeVideo" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <span class="close-button" id="closeButton">&times;</span>
     </div>
 
     <div class="blog-container">
@@ -136,5 +141,6 @@
         <img src="../img/Ellipse 9.png" alt="ball" class="blue-circle" />
       </div>
     </div>
+    <script src="../js/custom.js"></script>
   </body>
 </html>
