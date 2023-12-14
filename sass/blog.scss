@@ -19,7 +19,8 @@
 
 .boxes {
   display: flex;
-  margin-top: 80px;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .box-1 {
@@ -38,10 +39,10 @@
 }
 
 .blogBall {
-    position: absolute;
-    left: -25%;
-    z-index: -1;
-    top: 0;
+  position: absolute;
+  left: -25%;
+  z-index: -1;
+  top: 0;
 }
 
 .name {
@@ -64,65 +65,63 @@
 }
 
 .blog-button {
-    position: absolute;
-    top: 70%;
-    left: 9%;
-    display: flex;
-    align-items: center;
-    color: white;
+  position: absolute;
+  top: 70%;
+  left: 9%;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
-.button-text{
-    position: absolute;
-    left: 7.5%;
-    font-size: 12px;
+.button-text {
+  position: absolute;
+  left: 7.5%;
+  font-size: 12px;
 }
 
 .button-text::after {
-    content: "";
-    display: block;
-    width: 35%;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-  }
+  content: '';
+  display: block;
+  width: 35%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
 
 .blogLine {
-    position: relative;
-    left: -110%;
+  position: relative;
+  left: -110%;
 }
 
 .blogButtonBall {
-    position: relative;
-    left: 1%;
-    top: 65%;
+  position: relative;
+  left: 1%;
+  top: 65%;
 }
 
 .box-2 {
-    margin-right: 50px;
-    position: relative;
-    display: flex;
-    justify-content: center;
+  margin-right: 50px;
+  position: relative;
 }
 
 .overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    color: black;
-    align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  color: black;
+  align-items: flex-start;
 }
 
 .firstPart {
-    display: flex;
-    align-items: center;
-    margin: 18px;
-    width: 100%;
-    position: relative;
+  display: flex;
+  align-items: center;
+  margin: 18px;
+  width: 100%;
+  position: relative;
 }
 
 .overlay2::after {
@@ -135,24 +134,23 @@
 }
 
 .card-data {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .avatar-name {
-font-size: 14px;
+  font-size: 14px;
 }
 
 .avatar-date {
-    font-size: 14px;
-    color: #aaa9a9;
+  font-size: 14px;
+  color: #aaa9a9;
 }
 
-
 .box-3 {
-    margin-right: 50px;
-    position: relative;
-    display: flex;
-    justify-content: center;
+  margin-right: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .desc-section {
@@ -163,7 +161,7 @@ font-size: 14px;
   font-size: 14px;
 }
 
-.box-description{
+.box-description {
   font-size: 12px;
   color: #aaa9a9;
   margin-top: 15px;
@@ -171,7 +169,7 @@ font-size: 14px;
 
 .read-more {
   font-size: 12px;
-  color:#0f6eff;
+  color: #0f6eff;
   text-decoration: underline;
   margin-top: 20px;
 }
@@ -191,4 +189,125 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 12px;
+  z-index: 3;
+}
+
+@media (max-width: 1425px) {
+  .blogsquare {
+    left: 110%;
+  }
+}
+
+@media (max-width: 1381px) {
+  .blogLine {
+    display: none;
+  }
+
+  .button-text {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1351px) {
+  .blog-image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 1227px) {
+  .desc-section,
+  .firstPart {
+    margin: 10px;
+  }
+
+  .overlay2::after {
+    bottom: 76%;
+  }
+
+  .description {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1164px) {
+  .overlay2 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1119px) {
+  .blog-container {
+    margin-right: 100px;
+  }
+
+  .overlay2::after {
+    bottom: 74%;
+  }
+
+  .desc-section {
+    margin-top: 30px;
+  }
+
+  .blogsquare {
+    left: 60%;
+    z-index: -2;
+  }
+}
+
+@media (max-width: 1008px) {
+  .blogsquare {
+    display: none;
+  }
+
+  .blog-container {
+    margin: 233px 60px 0 100px;
+  }
+}
+
+@media (max-width: 927px) {
+  .boxes {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .box-1 {
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .box-2,
+  .box-3 {
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .overlay2::after {
+    display: none;
+  }
+
+  .blogsquare {
+    left: 100%;
+  }
+
+  .desc-section {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 781px) {
+  .blog-description {
+    flex-direction: column;
+    p {
+      margin: 0;
+    }
+  }
+
+  .blog-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 501px) {
+  .blog-container {
+    margin: 233px 10px 0 10px;
+  }
 }
