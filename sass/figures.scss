@@ -88,20 +88,19 @@
 .line-4 {
   position: absolute;
   left: 5.5%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
 }
-
 
 .watch-video-text {
   font-size: 18px;
-  color: #0f6eff; 
+  color: #0f6eff;
   margin-left: 300px;
   position: relative;
   cursor: pointer;
 }
 
 .watch-video-text::after {
-  content: "";
+  content: '';
   display: block;
   width: 60%;
   height: 1px;
@@ -135,4 +134,293 @@
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 1441px) {
+  .watch-video-text {
+    margin-left: 330px;
+  }
+
+  .line-4 {
+    left: 2%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .watch-video-text {
+    margin-left: 330px;
+  }
+
+  .play-button,
+  .play-icon {
+    left: 12%;
+  }
+
+  .line-4 {
+    left: 4.6%;
+  }
+
+  .squares-container {
+    left: 50%;
+  }
+}
+
+@media (max-width: 1847px) {
+  .line-4 {
+    left: 4.3%;
+  }
+}
+
+@media (max-width: 1862px) {
+  .squares-container {
+    left: 45%;
+  }
+}
+
+@media (max-width: 1692px) {
+  .squares-container {
+    left: 40%;
+    top: 14%;
+  }
+
+  .line-4 {
+    left: 3.5%;
+  }
+
+  .watch-video-text {
+    margin-left: 310px;
+  }
+}
+
+@media (max-width: 1556px) {
+  .squares-container {
+    left: 37%;
+  }
+
+  .line-4 {
+    left: 2.9%;
+  }
+}
+
+@media (max-width: 1482px) {
+  .squares-container {
+    left: 35%;
+  }
+
+  .watch-video-text {
+    margin-left: 280px;
+  }
+
+  .line-4 {
+    left: 2.5%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .watch-video-text {
+    margin-left: 260px;
+  }
+
+  .line-4 {
+    left: 1.7%;
+  }
+}
+
+@media (max-width: 1344px) {
+  .line-4 {
+    left: 1.5%;
+  }
+
+  .squares-container {
+    left: 40%;
+    top: 15%;
+  }
+
+  .square-top,
+  .square-left {
+    height: 250px;
+  }
+
+  .square-right {
+    height: 300px;
+  }
+
+  .dots-behind-square {
+    height: 210px;
+  }
+
+  .circle-right {
+    height: 230px;
+  }
+
+  .blue-circle {
+    top: 146%;
+  }
+
+  .white-background-photo {
+    height: 800px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .line-4 {
+    display: none;
+  }
+}
+
+@media (max-width: 1191px) {
+  .square-top,
+  .square-left {
+    height: 220px;
+  }
+
+  .square-right {
+    height: 280px;
+  }
+
+  .dots-behind-square {
+    height: 190px;
+  }
+
+  .circle-right {
+    height: 210px;
+  }
+
+  .blue-circle {
+    top: 145%;
+  }
+
+  .line-5 {
+    display: none;
+  }
+}
+
+@media (max-width: 1155px) {
+  .white-background-photo {
+    height: 150px;
+    width: 2000px;
+  }
+
+  .watch-video-text {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 1069px) {
+  .dots-behind-square {
+    display: none;
+  }
+
+  .squares-container {
+    top: 20%;
+  }
+
+  .square-top,
+  .square-left {
+    height: 200px;
+  }
+
+  .square-right {
+    height: 260px;
+  }
+
+  .circle-right {
+    height: 190px;
+  }
+
+  .blue-circle {
+    top: 143%;
+  }
+
+  .header-description {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 965px) {
+  .squares-container {
+    top: 35%;
+    z-index: -2;
+  }
+
+  .square-top {
+    position: relative;
+    height: 50px;
+    left: -120%;
+  }
+
+  .square-right {
+    position: relative;
+    height: 100px;
+    left: 50%;
+  }
+
+  .square-left {
+    position: relative;
+    height: 100px;
+    left: -90%;
+    top: 50%;
+  }
+  .circle-right,
+  .blue-circle {
+    display: none;
+  }
+
+  .play-button-container {
+    left: 30%;
+  }
+}
+
+@media (max-width: 927px) {
+  .squares-container {
+    top: 20%;
+  }
+}
+
+@media (max-width: 828px) {
+  .square-top {
+    top: -270px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .watch-video-text {
+    margin-left: 180px;
+  }
+  .square-right {
+    left: 50px;
+    top: 170px;
+  }
+}
+
+@media (max-width: 618px) {
+  .squares-container {
+    display: none;
+  }
+}
+
+@media (max-width: 501px) {
+  .watch-video-text {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 400px) {
+  .watch-video-text {
+    font-size: 12px;
+    margin-left: 110px;
+  }
+
+  .play-button {
+    height: 100px;
+  }
+
+  .play-icon {
+    height: 35px;
+  }
+
+  .watch-video-text::after {
+    bottom: 20px;
+  }
 }

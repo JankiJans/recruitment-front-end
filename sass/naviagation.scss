@@ -14,7 +14,6 @@
 }
 
 .navbar-brand {
-  
   display: flex;
   align-items: center;
   margin-right: 116px;
@@ -57,17 +56,17 @@
 }
 
 .contact-btn {
-    background-color: #dfdfdf;
-    color: #0f6eff;
-    border: 2px solid #0f6eff;
-    padding: 13px 23px;
-    text-align: center;
-    display: inline-block;  
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 50px;
+  background-color: transparent;
+  color: #0f6eff;
+  border: 2px solid #0f6eff;
+  padding: 13px 23px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50px;
 }
 
 .contact-btn:hover {
@@ -76,7 +75,7 @@
 }
 
 .language-select {
-  background-color: #dfdfdf;
+  background-color: transparent;
   border: 0;
   margin: 0 40px 0 24px;
 }
@@ -86,5 +85,133 @@
   color: #aaaaaa;
   span {
     color: #2f7afe;
+  }
+}
+
+.phone-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bars {
+  display: none;
+}
+
+.cross {
+  padding: 20px;
+}
+
+.overlay3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(117, 117, 117, 0.9);
+  z-index: 2;
+}
+
+@media (max-width: 1289px) {
+  .phone-number {
+    display: none;
+  }
+
+  .phone-icon {
+    display: inline-block;
+    width: 30px;
+    position: relative;
+  }
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    white-space: nowrap;
+  }
+
+  .phone-icon:hover .tooltip {
+    display: block;
+  }
+}
+
+@media (max-width: 1098px) {
+  .language-select {
+    border-radius: 5px;
+    padding: 1px;
+  }
+
+  .navigation {
+    padding-right: 62px;
+  }
+}
+
+@media (max-width: 965px) {
+  .phone-number {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+  }
+
+  .phone-icon {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+  }
+
+  .cross {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-links {
+    display: none;
+  }
+
+  .white-navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    z-index: 3;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .white-navbar.active {
+    display: block;
+    .navbar-right {
+      display: block;
+    }
+  }
+
+  .white-navbar a {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    margin-bottom: 15px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .white-navbar a:hover {
+    color: #0f6eff;
   }
 }
